@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "the sound of diversity",
+      "content": "The underrepresentation of Black artists in alternative rock and the need for greater diversity",
+      "author": "roy vincent",
+      "avatar": "https://i.pinimg.com/736x/1c/2f/4b/1c2f4b0d5e6a8e7b9d8f3c5a6b7e8f9a.jpg",
+      "date": "2025-06-23",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Manager</title>
+  <link rel="stylesheet" href="css/style.css" />
+<script src="src/index.js" defer></script>
+</head>
+<body>
+    <div class="blog-container">
+        <header class="blog-header">
+            <h1>Blog Post Manager</h1>
+            <h2>All Posts</h2>
+        </header>
+    </div>
+    <div class="content-area">
+        <section class="post-list-section">
+            <div class="section-header">
+                <h2>Blog Posts</h2>
+                <span id="post-count">0 posts</span>
+            </div>
+            <ul id="post-list" class="blog-posts-list">
+                <li class="loading-message">Loading posts...</li>
+            </ul>
+        </section>
+        <section class="post-detail-section">
+            <div id="post-detail" class="post-detail-card">
+                <h2 class="post-detail-title">Nothing Selected</h2>
+                <div class="post-info">
+                    <span class="post-author"></span>
+                    <span class="post-date"></span>
+                </div>
+                <div class="post-detail-image-container">
+                     <img src="" alt="Post Image" class="post-detail-image hidden">
+                </div>
+                <p class="post-content">Click a blog post from the left to see its full details.</p>
+                <div class="post-actions">
+                    <button id="edit-post-btn" class="action-btn edit-btn hidden">Edit</button>
+                    <button id="delete-post-btn" class="action-btn delete-btn hidden">Delete</button>
+                </div>
+            </div>
+            <div class="new-post-form-card">
+                <div class="section-header">
+                    <h2>+ Add New Post</h2>
+                </div>
+                <form id="new-post-form" class="post-form">
+                    <div class="form-group">
+                        <label for="new-title" class="hidden">Title</label>
+                        <input type="text" id="new-title" placeholder="Input your post's title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-author" class="hidden">Author</label>
+                        <input type="text" id="new-author" placeholder="Input your name" required>
+                    </div>
+                     <div class="form-group">
+                        <label for="new-avatar" class="hidden">Image URL</label>
+                        <input type="url" id="new-avatar" placeholder="Image URL..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-content" class="hidden">Content</label>
+                        <textarea id="new-content" rows="5" placeholder="Input your post content..." required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Add Post</button>
+                        <button type="button" class="remove-btn hidden">Remove</button>
+                    </div>
+                </form>
+            </div>
+            <div id="edit-post-card" class="edit-post-form-card hidden">
+                <div class="section-header">
+                    <h2>Edit Post</h2>
+                </div>
+                <form id="edit-post-form" class="post-form">
+                    <div class="form-group">
+                        <label for="edit-title" class="hidden">Title</label>
+                        <input type="text"id="edit-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-content" class="hidden">Content</label>
+                        <textarea id="edit-content" rows="5" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn update-btn">Update Post</button>
+                        <button type="button" id="cancel-edit" class="cancel-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
