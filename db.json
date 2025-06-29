@@ -4,7 +4,6 @@
       "id": 1,
       "title": "the journey of a thousand miles begins with a single step",
       "author": "millie b",
-      "avatar": "https://www.pinterest.com/pin/6685099420791942/",
       "content": "The importance of taking the first step in any journey, no matter how daunting it may seem",
       "date": "2025-06-22"
     },
@@ -13,8 +12,22 @@
       "title": "the sound of diversity",
       "content": "The underrepresentation of Black artists in alternative rock and the need for greater diversity",
       "author": "roy vincent",
-      "avatar": "https://www.pinterest.com/pin/99290366781340051/",
       "date": "2025-06-23"
+    }
+    },
+    {
+      "id": 3,
+      "title": "the power of music",
+      "author": "millie b",
+      "content": "How music can bring people together and create a sense of community",
+      "date": "2025-06-24"
+    },
+    {
+      "id": 4,
+      "title": "the future of alternative rock",
+      "author": "roy vincent",
+      "content": "The evolution of alternative rock and its potential for the future",
+      "date": "2025-06-25"
     }
   ]
     
